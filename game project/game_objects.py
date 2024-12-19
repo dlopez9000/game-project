@@ -21,17 +21,17 @@ class Star:
 
 class Projectile:
     def __init__(self, assets, screen_width, screen_height, hitbox_size=0.5):
-        self.image = assets["asteroid"]  # Assuming asteroid image is in the assets dictionary
+        self.image = assets["asteroid"] 
         
-        # Get the original size of the asteroid image
+      
         original_width, original_height = self.image.get_width(), self.image.get_height()
         
-        # Scale the image based on the hitbox_size
+      
         scaled_width = int(original_width * hitbox_size)
         scaled_height = int(original_height * hitbox_size)
         self.image = pygame.transform.scale(self.image, (scaled_width, scaled_height))
 
-        # Create the projectile with the new size hitbox
+       
         self.rect = pygame.Rect(
             random.randint(screen_width, screen_width + 300),
             random.randint(50, screen_height - 50),

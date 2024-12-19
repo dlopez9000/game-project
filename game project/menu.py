@@ -31,8 +31,7 @@ def show_menu(screen, assets):
         logo_rect = logo_image.get_rect(center=(screen_width // 2, screen_height // 5))
         screen.blit(logo_image, logo_rect)
 
-        # Adjust the positioning of the spacebar and scoresave images
-        # Draw the spacebar sprite (centered, lower in the screen)
+ 
         spacebar_rect = spacebar_image.get_rect(center=(screen_width // 2, screen_height // 1.8))  # Move lower
         screen.blit(spacebar_image, spacebar_rect)
 

@@ -10,10 +10,9 @@ def show_pause_menu(screen, font):
     resume_rect = resume_text.get_rect(center=(screen_width // 2, screen_height // 2 - 20))
     quit_rect = quit_text.get_rect(center=(screen_width // 2, screen_height // 2 + 20))
 
-    # Load the pause image (ensure it's in the correct folder)
+
     pause_image = pygame.image.load("pauseimage.png")
 
-    # Scale the pause image to match the screen size (optional)
     pause_image = pygame.transform.scale(pause_image, (screen_width, screen_height))
 
     # Display pause menu with the pause image as background
